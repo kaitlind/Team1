@@ -1,0 +1,306 @@
+body {
+    padding: 0 50px;
+    background-color: #f4f4f4;
+    font-family: source-sans-pro, sans-serif;
+}
+
+/* tab bar */
+.tabClass {
+  position: relative;   
+  min-height: 200px; /* text box height */
+  clear: both;
+  margin: 25px 0;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: #888; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px; 
+}
+.tab [type=radio] { /* hides but still uses functionality of radio buttons */
+  display: none;   
+}
+.tabContent {
+  position: absolute;
+  top: 28px; /* space for tab and tab text box */
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc; 
+}
+[type=radio]:checked ~ label { /* (~) tilda symbol lets you target attributes that have a spaced/separated list of values */
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .tabContent {
+  z-index: 1;
+}
+/* end tab bar */
+
+/* pop up */
+h1 {
+    text-align: center;
+    font-family: source-sans-pro, sans-serif;
+    color: #000;
+    margin: 80px 0;
+}
+
+.box {
+    width: 40%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    padding: 35px;
+    border: 2px solid #ccc;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+}
+
+.iconPopUp {
+    width: 40%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    padding: 35px;
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+}
+
+.button {
+    font-size: 1em;
+    padding: 10px;
+    color: #000;
+    border: 2px solid #6d8571;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.button:hover {
+    background: #ccc;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popUp {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popUp h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: source-sans-pro, sans-serif;
+}
+
+.popUp .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popUp .close:hover {
+    color: #ccc;
+}
+
+.popUp .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+    .box{
+        width: 70%;
+    }
+    .popup{
+        width: 70%;
+    }
+}
+/* end pop up */
+
+/* drop down menu */
+nav ul {
+	text-shadow: 0 1px 0 #FFF;
+    background: #ddd;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    -webkit-font-smoothing: antialiased; /* non-standard */
+}
+nav li {
+    float: left; /* line up vertically */
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-width: 25%;
+}
+nav a {
+    background: #ddd;
+    color: #444;
+    display: block; /* centers within element */
+    font: bold 16px/50px sans-serif;
+    padding: 0 25px;
+    text-align: center;
+    text-decoration: none; /* removes underline */
+    /* transitions */
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+nav .dropDown:after {
+    content: '\25b2'; /* unicode black triangle pointing up */
+}
+nav .dropDown:hover:after{
+	content:'\25bc' /* unicode black triangle pointing down */
+}
+nav li:hover a {
+    background: #ccc;
+}
+nav li ul {
+    float: left;
+    left: 0;
+    opacity: 0;
+    position: absolute; /* grey background only surrounds nav bar */
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+    /*transitions*/
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+nav li:hover ul {
+    opacity: 1;
+    top: 50px;
+    visibility: visible;
+}
+nav li ul li {
+    float: none;
+    width: 100%;
+}
+nav li ul a:hover {
+    background: #bbb;
+}
+
+/* clearfix */
+.ddm:after, .ddm:before {
+    content: "";
+    display: table;
+}
+.ddm:after {
+    clear: both;
+}
+.ddm {
+    zoom:1;
+}
+/* end drop down menu */
+
+/* image gallery */
+
+#gallery {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#gallery ul {margin: auto; 
+    padding: 0;
+    text-align: center;
+}
+
+#gallery ul li {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #000 #000 #444;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 1px 14px;
+    display: inline-block;
+    font-size: 0.9em;
+    list-style: outside none none;
+    min-height: 150px;
+    vertical-align: top;
+    width: 22%;
+    -webkit-transition: margin 0.5s, width 1s, height 1s, background-color 2s, -webkit-transform 1s;
+    transition: margin 0.5s, width 1s, height 1s, background-color 2s, transform 1s;
+}
+
+#gallery ul li:hover {
+    background-color: #ccc;
+    -webkit-transform: scale(1.2); 
+    transform: scale(1.2); 
+    transform-origin: center;
+    margin:0 2%; 
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#gallery .caption {
+    padding: 10px;
+    text-align: center;
+    color: #555555;
+}
+
+@media (max-width: 720px) {
+    #gallery ul li {width: 75%;
+    margin-bottom: 20px;
+    }
+    
+    #gallery ul li:hover {
+    background-color: #ccc;
+    -webkit-transform: scale(1.2); 
+    transform: scale(1.2); 
+    transform-origin: center;
+    margin:5% 2%; 
+    }
+    
+  }
+
+
+/* end image gallery */

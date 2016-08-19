@@ -1,0 +1,263 @@
+@import url(http://weloveiconfonts.com/api/?family=typicons);
+
+/* typicons */
+[class*="typicons-"]:before {
+  font-family: 'Typicons', sans-serif;
+  margin-right: 11px;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #2b2929;
+    font-size: 1em;
+}
+
+h1,h2,h3,h4,h5,h6 {margin:10px 0;}
+
+h1{font-size: 1.8em; }
+h2{font-size: 1.3em; }
+h3{}
+h4{}
+h5{}
+h6{}
+
+p{ font-size: 0.9em; margin: 15px 0}
+
+a {text-decoration: none; 
+    color:#567b8d;
+    -webkit-transition: color ease-out 0.1s;
+    -moz-transition: color ease-out 0.1s;
+    -o-transition: color ease-out 0.1s;
+    transition: color ease-out 0.1s;
+}
+
+a:hover{color:#d98a3e;}
+
+code {
+    font-family: monospace;
+     font-size: 1.2em;
+}
+
+cite {
+    font-style: italic;
+}
+
+q::before {
+    content: '"';
+}
+q::after {
+    content: '"';
+}
+
+ul {
+    list-style-position: inside;
+    list-style: none;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+ul li:before {
+    content: "» ";
+}
+
+.u-case{text-transform: uppercase; font-size: 0.9em;}
+.l-case{text-transform: lowercase; font-size: 0.9em;}
+.c-case{text-transform: capitalize; font-size: 0.9em;}
+
+address {
+    display: block;
+    font-style: italic;
+    color: #567b8d;
+}
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+hr{    
+    
+    
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #ccc #ccc -moz-use-text-color;
+    border-image: none;
+    border-style: dotted dotted none;
+    border-width: 1px 1px 0;
+    margin: 25px 0;
+    width: 100%;
+}
+
+.responsive-img{ 
+    max-width: 100%;
+    height: auto;
+}
+
+#rank{background-color: #fff; }
+
+/* The ID of the wrapper */
+.rank {max-width: 960px; margin: auto}
+
+/* the group to hold more than 2columns*/
+.row { overflow: auto; margin-bottom: 5px;}
+
+/* the columns at 960 BreakPoint */
+.rank-col-12 {width:96%;padding:2%;}
+.rank-col-11 {width: 87.5%; float:left; margin-left: 2%; padding:0.5% 2%;}
+.rank-col-10 {width: 79%; float:left; margin-left: 2%; padding:0.5%  2%;}
+.rank-col-9  {width: 70.5%; float:left; margin-left: 2%; padding:0.5% 2%;}
+.rank-col-8  {width: 62%; float:left; margin-left: 2%; padding:0.5%  2%;}
+.rank-col-7  {width: 53.5%; float:left; margin-left:2%; padding:0.5%  2%;}
+.rank-col-6  {width: 45%; float:left; margin-left:2%; padding:0.5%  2%;}
+.rank-col-5  {width: 36.5%; float:left; margin-left: 2%; padding:0.5% 2%;}
+.rank-col-4  {width: 28%; float:left; margin-left:2%; padding:0.5% 2%;}
+.rank-col-3  {width: 19.5%; float:left; margin-left:2%; padding:0.5% 2%;}
+.rank-col-2  {width: 11%; float: left; margin-left:2%; padding:0.5% 2%;}
+.rank-col-1  {width:2.5%; float:left; margin-left:2%; padding:0.5% 2%;}
+.first {margin-left:0;}
+
+
+fieldset { 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2%;
+    width: 96%;}
+
+fieldset legend{    
+    font-size: 0.9em;
+    font-weight: 700;
+    padding:0 2%;
+}
+label {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+input[type="text"], select, textarea {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 0.9em;
+    margin-bottom: 7px;
+    min-height: 26px;
+    padding-left: 1%;
+    text-transform: capitalize;
+    width: 98%;
+}
+
+textarea{
+    font-size: 1.5em;
+    font-family: roboto;
+    font-size: 0.9em;
+    color: #2b2929;
+}
+
+input[type="radio"]{ margin-left: 1%; margin-bottom: 15px;}
+
+
+input[type="checkbox"]{
+    height: 16px;
+    margin-left: 1%;
+    position: relative;
+    width: 16px;
+    margin-bottom: 15px;
+}
+
+select{width: 99%;}
+select options{}
+input[type="button"],input[type="submit"],input[type="reset"], button, .a-button, .btn-large, .btn-normal, .btn-small,.btn-xsmall{    
+    background-color: #6d8571;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    margin: 1%;
+    padding: 10px 28px;
+    cursor: pointer;
+}
+
+.a-button{     
+    display: inline-block;
+    margin: 4px 0;
+    -webkit-transition: background-color ease-out 0.2s;
+    -moz-transition: background-color ease-out 0.2s;
+    -o-transition: background-color ease-out 0.2s;
+    transition: background-color ease-out 0.2s;
+}
+.a-button:hover{
+    color: #fff;
+    background-color: #d98a3e;
+}
+
+.btn-large{font-size: 1.4em; padding: 12px 43px;}
+.btn-normal{padding: 10px 28px;}
+.btn-small{font-size: 1em; padding: 3px 23px;}
+.btn-xsmall{font-size: 0.7em; padding: 2px 6px;}
+
+
+.btn-large, .btn-normal, .btn-small, .btn-xsmall{
+    -webkit-transition: background-color ease-out 0.2s;
+    -moz-transition: background-color ease-out 0.2s;
+    -o-transition: background-color ease-out 0.2s;
+    transition: background-color ease-out 0.2s;
+}
+
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active, 
+button:active,
+.btn-large:active, 
+.btn-normal:active, 
+.btn-small:active, 
+.btn-xsmall:active, 
+.a-button:active{ background-color: #3b575b !important; }
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover, 
+button:hover,
+.btn-large:hover, 
+.btn-normal:hover, 
+.btn-small:hover, 
+.btn-xsmall:hover{ color: #fff; background-color: #d98a3e; }
+
+table td{padding-left: 1%;}
+.responsive-table{overflow-x:auto}
+.bordered-table{border: 1px solid #ccc}
+.striped-table-odd tr:nth-child(odd){ background-color: #ebeeeb;}
+.striped-table-even tr:nth-child(even){ background-color: #ebeeeb;}
+
+
+.clear-all{clear: both}
+.clear-l{clear: left}
+.clear-r{clear:right }
+.float-l{float: left}
+.float-l{float: right}
+.no-float{float: none}
+
+@media only screen and max-width: 768px) {   
+}/* End @media 768 */
+
+
+
+@media only screen and (max-width: 480px) {
+    .rank .row > *{ 
+        width: 96%;
+        float: none;
+        margin-left: 0;
+        margin-bottom: 5px;
+        overflow: auto;
+    }
+    
+    .row { overflow:inherit; margin-bottom: 0;}
+    
+}/* End @media 768 */
+
+@media print {
+    .printer-ignore { display: none; }
+}  

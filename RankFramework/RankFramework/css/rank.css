@@ -199,13 +199,22 @@ input[type="button"],input[type="submit"],input[type="reset"], button, .a-button
 .btn-small{font-size: 1em; padding: 3px 23px;}
 .btn-xsmall{font-size: 0.7em; padding: 2px 6px;}
 
-
 .btn-large, .btn-normal, .btn-small, .btn-xsmall{
     -webkit-transition: background-color ease-out 0.2s;
     -moz-transition: background-color ease-out 0.2s;
     -o-transition: background-color ease-out 0.2s;
     transition: background-color ease-out 0.2s;
 }
+
+input[type="button"]:disabled,
+input[type="submit"]:disabled,
+input[type="reset"]:disabled, 
+button:disabled,
+.btn-large:disabled, 
+.btn-normal:disabled, 
+.btn-small:disabled, 
+.btn-xsmall:disabled, 
+.a-button:disabled{ background-color: #9c9a96 !important; }
 
 input[type="button"]:active,
 input[type="submit"]:active,
